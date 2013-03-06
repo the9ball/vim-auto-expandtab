@@ -4,7 +4,7 @@ endif
 let g:loaded_autoload_autoexpandtab = 1
 
 function! autoexpandtab#enable()
-	augroup CheckExpandTab
+	augroup plugin-auto-expand-tab
 		au!
 		au BufEnter * call s:CheckExpandTab()
 	augroup END
@@ -12,7 +12,7 @@ function! autoexpandtab#enable()
 endfunction
 
 function! autoexpandtab#disable()
-	augroup CheckExpandTab
+	augroup plugin-auto-expand-tab
 		au!
 	augroup END
 endfunction
